@@ -6,7 +6,7 @@
     android:theme="@android:style/Theme.Black">
 
     <fragment
-        android:id="@+id/map"
+        android:id="@+id/mapContainer"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,6 +14,7 @@
         tools:context=".MainActivity" />
 
     <Button
+        android:id="@+id/btnTouristAttractions"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_alignParentStart="true"
@@ -28,58 +29,14 @@
         android:drawableStart="@drawable/lighthouse"
         android:textSize="15dp" />
 
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/rounded_corner"
-        android:gravity="center_vertical"
-        android:text="문화시설"
-        android:paddingLeft="10dp"
-        android:drawableStart="@drawable/home"
-        android:textColor="#000000"
-        android:textSize="15dp" />
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/rounded_corner"
-        android:drawableStart="@drawable/tree"
-        android:gravity="center_vertical"
-        android:text="자연물"
-        android:paddingRight="5dp"
-        android:paddingLeft="17dp"
-        android:textColor="#000000"
-        android:textSize="15dp" />
+    <!-- Other Buttons -->
 
     <Button
-        android:id="@+id/btnNewButton2"
+        android:id="@+id/btnRecommendCourse"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/rounded_corner"
-        android:drawableStart="@drawable/me"
-        android:text="현재위치"
-        android:textColor="#000000"
-        android:gravity="center_vertical"
-        android:paddingLeft="15dp"
-        android:textSize="15dp" />
-
-    <Button
-        android:id="@+id/btnNewButton1"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_above="@id/btnNewButton2"
+        android:layout_above="@id/btnCurrentLocation"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_corner"
@@ -88,6 +45,24 @@
         android:gravity="center_vertical"
         android:textColor="#000000"
         android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+    <!-- Other Buttons -->
+
+    <Button
+        android:id="@+id/btnCurrentLocation"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/rounded_corner"
+        android:text="현재위치"
+        android:paddingLeft="15dp"
+        android:textColor="#000000"
+        android:drawableStart="@drawable/location"
         android:textSize="15dp" />
 
 </RelativeLayout>
